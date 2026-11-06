@@ -17,6 +17,8 @@
     .hero .container{position:relative;z-index:1}.eyebrow{font-size:12px;font-weight:850;letter-spacing:2.4px;color:#a8f3e9}
     .hero h1{font-size:clamp(34px,6vw,62px);line-height:1.16;letter-spacing:-1.5px;margin:13px 0 14px}.hero h1 em{color:#c8ffe9;font-style:normal}
     .hero p{font-size:16px;opacity:.93;margin:0 0 18px}.pills{display:flex;flex-wrap:wrap;gap:8px}.pill{padding:6px 12px;border:1px solid #ffffff55;background:#ffffff19;border-radius:22px;font-size:12px;font-weight:650}
+    .hero-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.hero-copy{flex:1;min-width:0}.yuan-card{margin:0;flex:0 0 192px;padding:8px 8px 10px;background:#ffffffed;color:#25485c;border-radius:19px;box-shadow:0 16px 38px #001f3545;transform:rotate(4deg)}
+    .yuan-card img{display:block;width:100%;height:204px;object-fit:cover;object-position:50% 46%;border-radius:13px}.yuan-card figcaption{font-size:12px;font-weight:850;text-align:center;padding-top:7px}
     .topnav{position:sticky;top:0;z-index:20;background:#fffffff0;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
     .topnav .container{display:flex;overflow-x:auto;gap:21px;padding:10px 19px;white-space:nowrap;scrollbar-width:none;font-size:12px;font-weight:800}
     .topnav .container::-webkit-scrollbar{display:none}.topnav a{color:#436677}.topnav a:hover{color:var(--teal)}
@@ -53,16 +55,17 @@
     .mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.mini{padding:14px;background:#f3f8fa;border-radius:12px}.mini strong{display:block;font-size:14px}.mini p{font-size:12px;color:#5c7582;margin:5px 0 0}
     footer{text-align:center;color:#7c929b;font-size:12px;padding:16px}.sep{border:0;border-top:1px solid var(--line);margin:18px 0}
     @media(max-width:760px){.daynav{grid-template-columns:repeat(3,1fr)}.spotgrid{grid-template-columns:repeat(2,1fr)}.mini-grid{grid-template-columns:1fr}}
-    @media(max-width:550px){.hero{padding:40px 20px 42px}.hero p{font-size:14px}.main{padding:12px 12px 35px}.card{padding:17px;border-radius:16px;margin-bottom:14px}.grid{grid-template-columns:1fr}.daynav{grid-template-columns:repeat(2,minmax(0,1fr))}.spotgrid{grid-template-columns:1fr}.topnav .container{gap:16px}.day-header{align-items:flex-start}.day-badge{font-size:10px;padding:5px 7px}.stop{padding-left:12px}.timeline{padding-left:19px}}
+    @media(max-width:550px){.hero{padding:40px 20px 42px}.hero p{font-size:14px}.hero-inner{flex-direction:column;align-items:stretch;gap:20px}.yuan-card{width:175px;align-self:center;flex-basis:auto;transform:rotate(2deg)}.yuan-card img{height:185px}.main{padding:12px 12px 35px}.card{padding:17px;border-radius:16px;margin-bottom:14px}.grid{grid-template-columns:1fr}.daynav{grid-template-columns:repeat(2,minmax(0,1fr))}.spotgrid{grid-template-columns:1fr}.topnav .container{gap:16px}.day-header{align-items:flex-start}.day-badge{font-size:10px;padding:5px 7px}.stop{padding-left:12px}.timeline{padding-left:19px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
 <body>
-<header class="hero" id="top"><div class="container">
+<header class="hero" id="top"><div class="container hero-inner"><div class="hero-copy">
   <div class="eyebrow">FUKUOKA × YOASOBI · NOV 2026</div>
   <h1>福岡自由行<br><em>雙日演唱會之旅</em></h1>
   <p>2026 / 11 / 26（四）— 11 / 30（一）｜5 天 4 夜</p>
   <div class="pills"><span class="pill">✈️ 長榮航空直飛</span><span class="pill">🏨 博多站旁住宿</span><span class="pill">⛩️ 太宰府</span><span class="pill">🎤 YOASOBI 11/28＋11/29</span><span class="pill">🛍️ 購物・美食</span></div>
+  </div><figure class="yuan-card"><img src="assets/yuan-zai.jpg" alt="白色博美犬圓仔在比薩斜塔前開心揮手的照片" width="720" height="965" loading="eager"><figcaption>🐾 圓仔的旅行應援</figcaption></figure>
 </div></header>
 <nav class="topnav"><div class="container">
   <a href="#overview">旅程資訊</a><a href="#days">每日總覽</a><a href="#day1">DAY 1</a><a href="#day2">DAY 2</a><a href="#day3">DAY 3</a><a href="#day4">DAY 4</a><a href="#day5">DAY 5</a><a href="#checklist">行前準備</a><a href="#transport">交通</a><a href="#alternatives">逛街美食</a>
